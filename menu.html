@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu | Online Food Ordering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav">
+  <a class="brand" href="index.html">Online Food Ordering</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Sign Up</a>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Menu</h1>
+      <p class="page-subtitle">Browse categories and add your favorites to the cart.</p>
+    </div>
+
+    <a href="cart.html" class="btn secondary">Go to Cart</a>
+  </div>
+
+  <!-- Category Tabs (UI only) -->
+  <div class="tabs">
+    <a href="#popular" class="tab active">Popular</a>
+    <a href="#starters" class="tab">Starters</a>
+    <a href="#main" class="tab">Main Course</a>
+    <a href="#desserts" class="tab">Desserts</a>
+    <a href="#beverages" class="tab">Beverages</a>
+    <a href="#vegan" class="tab">Vegan</a>
+    <a href="#coffee" class="tab">Coffee</a>
+  </div>
+
+  <!-- POPULAR -->
+  <h2 id="popular" class="section-title">Popular</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/burger.jpg" alt="Classic Burger" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Classic Burger</h3>
+          <span class="price">$9.99</span>
+        </div>
+        <p class="desc">Juicy beef patty, cheese, lettuce, tomato, and house sauce.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Popular</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/pasta.jpg" alt="Creamy Alfredo Pasta" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Creamy Alfredo Pasta</h3>
+          <span class="price">$12.50</span>
+        </div>
+        <p class="desc">Rich Alfredo sauce, parmesan, and herbs over pasta.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Popular</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/salad.jpg" alt="Fresh Garden Salad" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Fresh Garden Salad</h3>
+          <span class="price">$7.25</span>
+        </div>
+        <p class="desc">Crisp greens, cucumber, tomatoes, and light vinaigrette.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Healthy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STARTERS -->
+  <h2 id="starters" class="section-title">Starters</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/fries.jpg" alt="Crispy Fries" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Crispy Fries</h3>
+          <span class="price">$4.50</span>
+        </div>
+        <p class="desc">Golden fries with a pinch of salt and seasoning.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Starter</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/wings.jpg" alt="Spicy Chicken Wings" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Spicy Chicken Wings</h3>
+          <span class="price">$8.99</span>
+        </div>
+        <p class="desc">Hot wings with dipping sauce on the side.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Starter</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/soup.jpg" alt="Tomato Soup" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Tomato Soup</h3>
+          <span class="price">$5.25</span>
+        </div>
+        <p class="desc">Warm tomato soup served with toasted bread.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Starter</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN COURSE -->
+  <h2 id="main" class="section-title">Main Course</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/rice.jpg" alt="Jollof Rice Combo" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Jollof Rice Combo</h3>
+          <span class="price">$13.99</span>
+        </div>
+        <p class="desc">Jollof rice, grilled chicken, and plantain.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Main</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/pizza.jpg" alt="Pepperoni Pizza" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Pepperoni Pizza</h3>
+          <span class="price">$14.50</span>
+        </div>
+        <p class="desc">Cheesy pizza with pepperoni and crispy crust.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Main</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/chicken.jpg" alt="Grilled Chicken Bowl" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Grilled Chicken Bowl</h3>
+          <span class="price">$11.75</span>
+        </div>
+        <p class="desc">Grilled chicken with rice, veggies, and sauce.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Main</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESSERTS -->
+  <h2 id="desserts" class="section-title">Desserts</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/cake.jpg" alt="Chocolate Cake" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Chocolate Cake</h3>
+          <span class="price">$6.50</span>
+        </div>
+        <p class="desc">Soft chocolate cake slice with rich frosting.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Sweet</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/icecream.jpg" alt="Vanilla Ice Cream" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Vanilla Ice Cream</h3>
+          <span class="price">$4.99</span>
+        </div>
+        <p class="desc">Classic vanilla scoop with optional toppings.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Dessert</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/donut.jpg" alt="Glazed Donut" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Glazed Donut</h3>
+          <span class="price">$2.75</span>
+        </div>
+        <p class="desc">Soft donut with a smooth sweet glaze.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Dessert</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BEVERAGES -->
+  <h2 id="beverages" class="section-title">Beverages</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/cola.jpg" alt="Cola" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Chilled Cola</h3>
+          <span class="price">$2.50</span>
+        </div>
+        <p class="desc">Refreshing chilled cola served cold.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Drink</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/juice.jpg" alt="Fresh Juice" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Fresh Juice</h3>
+          <span class="price">$3.75</span>
+        </div>
+        <p class="desc">Fruit juice blend — fresh and tasty.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Drink</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/water.jpg" alt="Water" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Bottled Water</h3>
+          <span class="price">$1.50</span>
+        </div>
+        <p class="desc">Cold bottled water.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Drink</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VEGAN -->
+  <h2 id="vegan" class="section-title">Vegan</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/veganbowl.jpg" alt="Vegan Bowl" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Vegan Power Bowl</h3>
+          <span class="price">$10.99</span>
+        </div>
+        <p class="desc">Quinoa, veggies, chickpeas, and dressing.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Vegan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/vegwrap.jpg" alt="Veggie Wrap" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Veggie Wrap</h3>
+          <span class="price">$8.50</span>
+        </div>
+        <p class="desc">Loaded wrap with veggies and vegan sauce.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Vegan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/vegancurry.jpg" alt="Vegan Curry" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Vegan Curry</h3>
+          <span class="price">$12.25</span>
+        </div>
+        <p class="desc">Spiced curry with vegetables and rice.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Vegan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COFFEE -->
+  <h2 id="coffee" class="section-title">Coffee</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/menu/latte.jpg" alt="Latte" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Latte</h3>
+          <span class="price">$4.25</span>
+        </div>
+        <p class="desc">Creamy espresso latte with milk.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Coffee</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/cappuccino.jpg" alt="Cappuccino" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Cappuccino</h3>
+          <span class="price">$4.50</span>
+        </div>
+        <p class="desc">Espresso with foamy milk and rich taste.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Coffee</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/menu/espresso.jpg" alt="Espresso" class="menu-img" />
+      <div class="menu-body">
+        <div class="menu-top">
+          <h3>Espresso</h3>
+          <span class="price">$2.99</span>
+        </div>
+        <p class="desc">Strong espresso shot for quick energy.</p>
+        <div class="menu-actions">
+          <button class="btn-mini">Add to Cart</button>
+          <span class="tag">Coffee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

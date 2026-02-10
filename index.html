@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home | Online Food Ordering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav">
+  <a class="brand" href="index.html">Online Food Ordering</a>
+  <div class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Sign Up</a>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <!-- HERO SECTION -->
+<section class="hero2">
+  <img src="images/hero/hero-food.jpg" alt="Delicious food" class="hero-img">
+
+  <div class="hero2-overlay"></div>
+
+  <div class="hero2-content">
+    <span class="hero2-pill">Fast • Fresh • Easy</span>
+
+    <h1>Order Food Fast & Easy</h1>
+
+    <p>
+      Discover restaurants near you, browse menus, add to cart,
+      and checkout in minutes.
+    </p>
+
+    <div class="cta">
+      <a href="restaurants.html" class="btn">View Restaurants</a>
+      <a href="menu.html" class="btn secondary">Browse Menu</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Featured Restaurants Slider -->
+  <section class="home-section">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Featured Restaurants</h2>
+        <p class="section-subtitle">Slide to explore. Click any restaurant to view its menu.</p>
+      </div>
+
+      <div class="slider-actions">
+        <button class="slider-btn" id="restPrev" aria-label="Previous">‹</button>
+        <button class="slider-btn" id="restNext" aria-label="Next">›</button>
+      </div>
+    </div>
+
+    <div class="slider" id="restSlider">
+
+      <a class="slide-card" href="menu.html?restaurant=royal-bites">
+        <img src="images/restaurants/royal-bites.jpg" alt="Royal Bites" class="slide-img" />
+        <div class="slide-body">
+          <div class="slide-top">
+            <h3>Royal Bites</h3>
+            <span class="badge">Popular</span>
+          </div>
+          <p class="slide-meta">African • Rice • Grills</p>
+          <p class="slide-meta small">25–35 mins • 4.7</p>
+        </div>
+      </a>
+
+      <a class="slide-card" href="menu.html?restaurant=urban-pizza">
+        <img src="images/restaurants/urban-pizza.jpg" alt="Urban Pizza" class="slide-img" />
+        <div class="slide-body">
+          <div class="slide-top">
+            <h3>Urban Pizza</h3>
+            <span class="badge">Hot</span>
+          </div>
+          <p class="slide-meta">Pizza • Wings • Drinks</p>
+          <p class="slide-meta small">20–30 mins • 4.6</p>
+        </div>
+      </a>
+
+      <a class="slide-card" href="menu.html?restaurant=green-bowl">
+        <img src="images/restaurants/green-bowl.jpg" alt="Green Bowl" class="slide-img" />
+        <div class="slide-body">
+          <div class="slide-top">
+            <h3>Green Bowl</h3>
+            <span class="badge vegan">Vegan</span>
+          </div>
+          <p class="slide-meta">Vegan • Salads • Smoothies</p>
+          <p class="slide-meta small">30–40 mins • 4.8</p>
+        </div>
+      </a>
+
+      <a class="slide-card" href="menu.html?restaurant=cafe-brew">
+        <img src="images/restaurants/cafe-brew.jpg" alt="Cafe Brew" class="slide-img" />
+        <div class="slide-body">
+          <div class="slide-top">
+            <h3>Cafe Brew</h3>
+            <span class="badge coffee">Coffee</span>
+          </div>
+          <p class="slide-meta">Coffee • Pastries • Desserts</p>
+          <p class="slide-meta small">10–15 mins • 4.5</p>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="section-foot">
+      <a href="restaurants.html" class="btn secondary">See All Restaurants</a>
+    </div>
+  </section>
+
+  <!-- How it works (keep your cards) -->
+  <section class="home-section">
+    <h2 class="section-title">How it works</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Browse Restaurants</h3>
+        <p>Pick a restaurant and explore available menu categories.</p>
+      </div>
+
+      <div class="card">
+        <h3>Add to Cart</h3>
+        <p>Select your favorite dishes and store them in your cart.</p>
+      </div>
+
+      <div class="card">
+        <h3>Checkout</h3>
+        <p>Enter delivery details and confirm your order easily.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="wrapper">
+    © 2026 Online Food Ordering • Frontend UI Prototype
+  </div>
+</footer>
+
+<!-- Slider Script -->
+<script>
+  const slider = document.getElementById("restSlider");
+  const prev = document.getElementById("restPrev");
+  const next = document.getElementById("restNext");
+
+  function scrollByCards(direction) {
+    // scroll by ~1.2 cards
+    const card = slider.querySelector(".slide-card");
+    const amount = card ? (card.offsetWidth + 16) * 1.2 : 320;
+    slider.scrollBy({ left: direction * amount, behavior: "smooth" });
+  }
+
+  prev.addEventListener("click", () => scrollByCards(-1));
+  next.addEventListener("click", () => scrollByCards(1));
+</script>
+
+</body>
+</html>

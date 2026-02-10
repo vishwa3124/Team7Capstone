@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up | Online Food Ordering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="auth-page">
+
+  <div class="auth-card">
+
+    <!-- LEFT: Image / Branding -->
+    <div class="auth-media">
+      <div class="auth-brand">
+        <img src="images/logo.png" alt="Online Food Ordering Logo" class="auth-logo" />
+        <h1>Create your account</h1>
+        <p>Order faster, save favorites, track your cart, and checkout in minutes.</p>
+      </div>
+
+      <img
+        src="images/register-illustration.png"
+        alt="Food ordering illustration"
+        class="auth-illustration"
+      />
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="auth-form">
+      <h2>Sign Up</h2>
+      <p class="auth-subtitle">Fill in your details to get started</p>
+
+      <form action="register.php" method="POST">
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" type="text" name="fullname" placeholder="e.g., Brian Ntong" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" placeholder="e.g., brian@email.com" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="Create a strong password" required />
+          <small class="hint">Use 8+ characters with letters and numbers.</small>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Re-type password" required />
+        </div>
+
+        <button type="submit" class="btn-auth">Create Account</button>
+
+        <p class="auth-alt">
+          Already have an account?
+          <a href="login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

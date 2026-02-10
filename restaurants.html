@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurants | Online Food Ordering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav">
+  <a class="brand" href="index.html">Online Food Ordering</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="restaurants.html" class="active">Restaurants</a>
+    <a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Sign Up</a>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Restaurants</h1>
+      <p class="page-subtitle">Choose a restaurant to view its menu.</p>
+    </div>
+    <a href="menu.html" class="btn secondary">Browse All Menus</a>
+  </div>
+
+  <!-- Search bar (UI only) -->
+  <div class="search-row">
+    <input class="search-input" type="text" placeholder="Search restaurants (UI only)..." />
+  </div>
+
+  <!-- Restaurant Grid -->
+  <div class="restaurant-grid">
+
+    <a class="restaurant-card" href="menu.html?restaurant=royal-bites">
+      <img src="images/restaurants/royal-bites.jpg" alt="Royal Bites" class="restaurant-img" />
+      <div class="restaurant-body">
+        <div class="restaurant-top">
+          <h3>Royal Bites</h3>
+          <span class="badge">Popular</span>
+        </div>
+        <p class="restaurant-meta">African • Rice • Grills</p>
+        <p class="restaurant-meta small">Delivery: 25–35 mins • Rating: 4.7</p>
+      </div>
+    </a>
+
+    <a class="restaurant-card" href="menu.html?restaurant=urban-pizza">
+      <img src="images/restaurants/urban-pizza.jpg" alt="Urban Pizza" class="restaurant-img" />
+      <div class="restaurant-body">
+        <div class="restaurant-top">
+          <h3>Urban Pizza</h3>
+          <span class="badge">Hot</span>
+        </div>
+        <p class="restaurant-meta">Pizza • Wings • Drinks</p>
+        <p class="restaurant-meta small">Delivery: 20–30 mins • Rating: 4.6</p>
+      </div>
+    </a>
+
+    <a class="restaurant-card" href="menu.html?restaurant=green-bowl">
+      <img src="images/restaurants/green-bowl.jpg" alt="Green Bowl" class="restaurant-img" />
+      <div class="restaurant-body">
+        <div class="restaurant-top">
+          <h3>Green Bowl</h3>
+          <span class="badge vegan">Vegan</span>
+        </div>
+        <p class="restaurant-meta">Vegan • Salads • Smoothies</p>
+        <p class="restaurant-meta small">Delivery: 30–40 mins • Rating: 4.8</p>
+      </div>
+    </a>
+
+    <a class="restaurant-card" href="menu.html?restaurant=cafe-brew">
+      <img src="images/restaurants/cafe-brew.jpg" alt="Cafe Brew" class="restaurant-img" />
+      <div class="restaurant-body">
+        <div class="restaurant-top">
+          <h3>Cafe Brew</h3>
+          <span class="badge coffee">Coffee</span>
+        </div>
+        <p class="restaurant-meta">Coffee • Pastries • Desserts</p>
+        <p class="restaurant-meta small">Pickup: 10–15 mins • Rating: 4.5</p>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
