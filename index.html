@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home | Online Food Ordering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<div class="nav">
+  <div class="nav-inner">
+
+    <!-- Clickable logo takes user back home -->
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Website Logo" style="height:40px;">
+    </a>
+
+    <!-- Main navigation links -->
+    <div class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper">
+
+<!-- Hero section – first thing users see -->
+<section class="hero2">
+
+  <!-- Background image -->
+  <img src="images/hero/hero-food.jpg" alt="Delicious food" class="hero-img">
+
+  <!-- Dark overlay so text is readable -->
+  <div class="hero2-overlay"></div>
+
+  <!-- Main hero content -->
+  <div class="hero2-content">
+    <span class="hero2-pill">Fast • Fresh • Easy</span>
+
+    <h1>Order Food Fast & Easy</h1>
+
+    <p>
+      Discover restaurants near you, browse menus,
+      and checkout in just a few clicks.
+    </p>
+
+    <!-- Call-to-action buttons -->
+    <div class="cta">
+      <a href="restaurants.html" class="btn">View Restaurants</a>
+      <a href="menu.html?restaurant=all" class="btn secondary">Browse All</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured restaurant preview -->
+<section class="home-section">
+
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">Featured Restaurants</h2>
+      <p class="section-subtitle">Click any restaurant to view its menu.</p>
+    </div>
+  </div>
+
+  <div class="restaurant-grid">
+
+    <!-- Royal Bites -->
+    <a class="restaurant-card" href="menu.html?restaurant=royal-bites">
+      <img src="images/restaurants/royal-bites.jpg" class="restaurant-img">
+      <div class="restaurant-body">
+        <h3>Royal Bites</h3>
+        <p class="restaurant-meta">African • Rice • Grills</p>
+      </div>
+    </a>
+
+    <!-- Urban Pizza -->
+    <a class="restaurant-card" href="menu.html?restaurant=urban-pizza">
+      <img src="images/restaurants/urban-pizza.jpg" class="restaurant-img">
+      <div class="restaurant-body">
+        <h3>Urban Pizza</h3>
+        <p class="restaurant-meta">Pizza • Wings</p>
+      </div>
+    </a>
+
+    <!-- Green Bowl -->
+    <a class="restaurant-card" href="menu.html?restaurant=green-bowl">
+      <img src="images/restaurants/green-bowl.jpg" class="restaurant-img">
+      <div class="restaurant-body">
+        <h3>Green Bowl</h3>
+        <p class="restaurant-meta">Vegan • Healthy</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+</div>
+
+<!-- Simple footer -->
+<footer class="footer">
+  <div class="wrapper">
+    © 2026 Online Food Ordering
+  </div>
+</footer>
+
+</body>
+</html>
